@@ -132,6 +132,15 @@ RandomX_ConfigurationGraft::RandomX_ConfigurationGraft()
   RANDOMX_FREQ_IROL_R = 3;
 }
 
+RandomX_ConfigurationNevo::RandomX_ConfigurationNevo()
+{
+	DatasetBaseSize = 1073741824;
+	ArgonIterations = 2;
+	ArgonSalt = "RandomNEVO";
+	ScratchpadL3_Size = 1048576;
+	ProgramCount = 4
+}
+
 RandomX_ConfigurationBase::RandomX_ConfigurationBase()
 	: ArgonMemory(262144)
         , CacheAccesses(8)
@@ -398,6 +407,7 @@ RandomX_ConfigurationSafex RandomX_SafexConfig;
 RandomX_ConfigurationKeva RandomX_KevaConfig;
 RandomX_ConfigurationScala RandomX_ScalaConfig;
 RandomX_ConfigurationGraft RandomX_GraftConfig;
+RandomX_ConfigurationNevo RandomX_NevoConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 
