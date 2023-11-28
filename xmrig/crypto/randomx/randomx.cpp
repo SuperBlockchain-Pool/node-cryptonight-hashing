@@ -138,7 +138,7 @@ RandomX_ConfigurationNevo::RandomX_ConfigurationNevo()
 	ArgonIterations = 2;
 	ArgonSalt = "RandomNEVO";
 	ScratchpadL3_Size = 1048576;
-	ProgramCount = 4
+	ProgramCount = 4;
 }
 
 RandomX_ConfigurationBase::RandomX_ConfigurationBase()
