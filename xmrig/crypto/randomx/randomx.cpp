@@ -141,6 +141,16 @@ RandomX_ConfigurationNevo::RandomX_ConfigurationNevo()
 	ProgramCount = 4;
 }
 
+RandomX_ConfigurationEquilibria::RandomX_ConfigurationEquilibria()
+{
+  ArgonIterations = 1;
+  ArgonSalt = "RandomXEQ\x01";
+  ProgramIterations = 1024;
+  ProgramCount = 4;
+  ScratchpadL2_Size = 131072;
+  ScratchpadL3_Size = 262144;
+}
+
 RandomX_ConfigurationBase::RandomX_ConfigurationBase()
 	: ArgonMemory(262144)
         , CacheAccesses(8)
@@ -408,6 +418,7 @@ RandomX_ConfigurationKeva RandomX_KevaConfig;
 RandomX_ConfigurationScala RandomX_ScalaConfig;
 RandomX_ConfigurationGraft RandomX_GraftConfig;
 RandomX_ConfigurationNevo RandomX_NevoConfig;
+RandomX_ConfigurationEquilibria RandomX_EquilibriaConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 
