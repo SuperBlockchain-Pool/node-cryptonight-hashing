@@ -156,6 +156,7 @@ struct RandomX_ConfigurationKeva : public RandomX_ConfigurationBase { RandomX_Co
 struct RandomX_ConfigurationScala : public RandomX_ConfigurationBase { RandomX_ConfigurationScala(); };
 struct RandomX_ConfigurationGraft : public RandomX_ConfigurationBase { RandomX_ConfigurationGraft(); };
 struct RandomX_ConfigurationNevo : public RandomX_ConfigurationBase { RandomX_ConfigurationNevo(); };
+struct RandomX_ConfigurationEquilibria : public RandomX_ConfigurationBase { RandomX_ConfigurationEquilibria(); };
 
 extern RandomX_ConfigurationMonero RandomX_MoneroConfig;
 extern RandomX_ConfigurationWownero RandomX_WowneroConfig;
@@ -165,7 +166,7 @@ extern RandomX_ConfigurationKeva RandomX_KevaConfig;
 extern RandomX_ConfigurationScala RandomX_ScalaConfig;
 extern RandomX_ConfigurationGraft RandomX_GraftConfig;
 extern RandomX_ConfigurationNevo RandomX_NevoConfig;
-
+extern RandomX_ConfigurationEquilibria RandomX_EquilibriaConfig;
 extern RandomX_ConfigurationBase RandomX_CurrentConfig;
 
 template<typename T>
