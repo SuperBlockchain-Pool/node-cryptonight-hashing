@@ -1,6 +1,6 @@
 {
     "name": "cryptonight-hashing",
-    "version": "28.0.11",
+    "version": "28.0.13",
     "main": "index.js",
     "author": {
         "name": "Multiple",
