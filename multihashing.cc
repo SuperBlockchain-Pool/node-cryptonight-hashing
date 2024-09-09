@@ -267,6 +267,7 @@ static xmrig::cn_hash_fun get_cn_heavy_fn(const int algo) {
 static xmrig::cn_hash_fun get_cn_pico_fn(const int algo) {
   switch (algo) {
     case 0:  return FNA(CN_PICO_0);
+    case 1:  return FNA(CN_PICO_TLO); 
     default: return FNA(CN_PICO_0);
   }
 }
