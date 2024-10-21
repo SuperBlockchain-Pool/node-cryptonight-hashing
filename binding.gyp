@@ -121,12 +121,12 @@
                 '<!@(./check_cpu.sh ssse3 && echo -DHAVE_SSSE3 || echo)',
                 '<!@(./check_cpu.sh avx512f && echo -DHAVE_AVX512F || echo)',
                 '<!@(./check_cpu.sh xop && echo -DHAVE_XOP || echo)',
-                "-std=gnu11  -O0 -fno-strict-aliasing -fno-common -fwrapv    -fPIC -DNDEBUG -Ofast -fno-fast-math -w"
+                "-std=gnu11 -fno-strict-aliasing -fno-common -fwrapv  -fPIC -DNDEBUG -Ofast -fno-fast-math -w"
             ],
             "cflags_cc": [
                 '<!@(uname -a | grep "aarch64" >/dev/null && echo "-march=armv8-a+crypto -flax-vector-conversions -DXMRIG_ARM=8" || (uname -a | grep "armv7" >/dev/null && echo "-mfpu=neon -flax-vector-conversions -DXMRIG_ARM=7" || echo "-march=native -DXMRIG_FEATURE_ASM"))',
                 '<!@(./check_cpu.sh intel && echo -DCPU_INTEL || (./check_cpu.sh amd && (./check_cpu.sh amdnew && echo -DCPU_AMD || echo -DCPU_AMD_OLD) || echo))',
-                "-std=c++17 -s -O0 -fno-strict-aliasing -fno-common -fwrapv -fPIC -DNDEBUG -Ofast -fno-fast-math -fexceptions -fno-rtti -Wno-class-memaccess -w"
+                "-std=c++17 -s -fno-strict-aliasing -fno-common -fwrapv -fPIC -DNDEBUG -Ofast -fno-fast-math -fexceptions -fno-rtti -Wno-class-memaccess -w"
             ],
             'cflags!': [ '-fexceptions' ]
         }
